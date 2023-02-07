@@ -19,6 +19,10 @@ public class Labrador extends Dog
         super(name);
 	this.color = color;
     }
+    public void waddle()
+    {
+        System.out.println(name + " is doing a Labrador waddle");
+    }
 
     
     public String bark()
