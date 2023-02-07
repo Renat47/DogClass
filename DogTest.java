@@ -69,6 +69,23 @@ public class DogTest
         //casted
         ((Labrador)doggos.get(1)).waddle();
 
+        //animal arraylist
+        ArrayList <Animal> animals = new ArrayList<Animal>();
+        Animal dogo = new Dog("Dogo");
+        Animal labradoro = new Labrador("Labradoro","orange");
+        Animal yorkshiro = new Yorkshire("Yorkshiro", 25);
+        animals.add(dogo);
+        animals.add(labradoro);
+        animals.add(yorkshiro);
+        animals.get(0).setAge(2);
+        animals.get(1).setAge(4);
+        animals.get(2).setAge(7);
+        for (Animal i : animals)
+        {
+            System.out.println(i.getAge());
+            i.eat();
+        }
+
 
     }
 }
